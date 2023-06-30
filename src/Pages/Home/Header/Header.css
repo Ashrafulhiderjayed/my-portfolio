@@ -1,0 +1,15 @@
+
+.header{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    /* height: 100vh; */
+    /* display: flex; */
+    align-items: center;
+
+
+  background: url() no-repeat;
+  /* background: url(../../../assets//1.png) no-repeat; */
+  /* background-size: cover; */
+  /* padding: 70px 10% 0; */
+}

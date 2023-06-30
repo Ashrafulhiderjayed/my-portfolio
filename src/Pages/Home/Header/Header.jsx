@@ -3,6 +3,16 @@ import img from '../../../assets/cover.png'
 import './Header.css';
 
 const Header = () => {
+const handleDownload = () => {
+    // const resumeUrl = 'https://drive.google.com/file/d/1JdjQHtWR-qOB9lDnUioIEjeltkl5FCyn/view?usp=sharing';
+    // window.open(resumeUrl, '_blank');
+    const resumeUrl ='Ashraful Hider Jaed Resume.pdf';
+    const anchor = document.createElement('a');
+    anchor.href=resumeUrl;
+    anchor.download = 'Ashraful Hider Jaed Resume.pdf' 
+    anchor.click();
+};
+
     return (
         <section className="header flex flex-col-reverse md:flex-row">
             <div className="home-content sm:ms-2">
@@ -29,6 +39,7 @@ const Header = () => {
             />
             <p className='text-slate-300'>I am passionate about user experience and continuously iterate on designs to ensure <br /> optimal usability, accessibility, and a delightful journey for your website visitors.
                 </p>
+                <button className="btn btn-outline btn-info border-primary text-primary font-bold my-2" onClick={handleDownload}>Download Resume</button>
             </div>
             <div className='sm:mb-2'>
                 {/* <video src={video} controls></video> */}

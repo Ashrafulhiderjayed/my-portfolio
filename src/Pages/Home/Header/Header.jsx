@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <section className="header flex flex-col-reverse md:flex-row">
             <div className="home-content sm:ms-2">
-                <h2 className='sm:mt-4'>Hello, This is</h2>
+                <h2 className='sm:mt-4 text-slate-300'>Hello, This is</h2>
                 <h1 className='text-lg md:text-2xl font-bold text-white'>Ashraful Hider Jaed</h1>
                 
                 <TypeAnimation
@@ -27,7 +27,7 @@ const Header = () => {
               style={{ display: "inline-block" }}
               repeat={Infinity}
             />
-            <p>experience in frontend technologies. I'm ready build website for your company.
+            <p className='text-slate-300'>I am passionate about user experience and continuously iterate on designs to ensure <br /> optimal usability, accessibility, and a delightful journey for your website visitors.
                 </p>
             </div>
             <div className='sm:mb-2'>

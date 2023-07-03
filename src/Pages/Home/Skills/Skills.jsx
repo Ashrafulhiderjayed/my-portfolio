@@ -52,8 +52,7 @@ const Skills = () => {
         {
             color: "#ffffff",
             value: 50,
-            image: "https://img.icons8.com/?size=512&id=SDVmtZ6VBGXt&format=png",
-            // image: "https://www.svgrepo.com/show/354113/nextjs-icon.svg",
+            image: "https://www.svgrepo.com/show/354113/nextjs-icon.svg",
           },
       ];
     return (

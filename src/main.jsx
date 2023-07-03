@@ -16,7 +16,7 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <div className='mx-auto max-w-7xl'>
+    <div className='mx-auto max-w-7xl' style={{overflowX: 'hidden'}}>
       <RouterProvider router={router} />
     </div>
   </React.StrictMode>,

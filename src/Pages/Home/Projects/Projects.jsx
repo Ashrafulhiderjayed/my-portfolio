@@ -3,7 +3,7 @@ import photogrphy from '../../../assets/summer-camp.png';
 import toy from '../../../assets/toy.png';
 import chef from '../../../assets/kitchen.png';
 import './Projects.css';
-import { FaBeer, FaGithub, FaLink } from "react-icons/fa";
+import { FaGithub, FaLink } from "react-icons/fa";
 
 
 const Projects = () => {
@@ -41,7 +41,7 @@ const Projects = () => {
             {
                 projects.map((project, index) => <div key={index} className="shadow-lg ">
 
-                <figure><img className="fullimg h-72 xl:h-80" src={project.image} alt="car!"/></figure>
+                <figure><img className="fullimg h-72 xl:h-80" src={project.image} alt="project-image"/></figure>
                 
                 <div className="card w-96 glass text-justify">
                     <div className="card-body">

@@ -8,7 +8,8 @@ export default {
     extend: {
       colors: {
         primary: '#0ef',
-        deepBlue: 'rgb(5 8 22)'
+        deepBlue: 'rgb(5 8 22)',
+        deepBlue2: '#031127'
       },
       fontFamily:{
         poppins: ["Poppins", "sans-serif"],

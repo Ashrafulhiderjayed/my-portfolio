@@ -1,0 +1,10 @@
+.fullimg{
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: 8s all ease;
+  
+    &:hover {
+      object-position: bottom;
+    }
+  }

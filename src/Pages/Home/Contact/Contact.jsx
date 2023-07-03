@@ -3,6 +3,7 @@ import HeadingTitle from "../../HeadingTitle/HeadingTitle";
 // import './Contact.css';
 import emailjs from '@emailjs/browser';
 import Swal from "sweetalert2";
+import { FaBeer, FaFacebook, FaGithub, FaGithubAlt, FaLinkedin } from 'react-icons/fa';
 
 const Contact = () => {
     const form = useRef();
@@ -42,6 +43,11 @@ const Contact = () => {
             <input type="submit" value="Send" />
             
         </form>
+        </div>
+        <div className="text-cyan-50 mb-28 flex flex-wrap md:flex-nowrap pt-5 gap-4 justify-center items-center">
+            <a href="https://www.facebook.com/ashraful.hider/" target="_blank"  rel="noreferrer" className=" social"><FaFacebook /></a>
+            <a href="https://github.com/Ashrafulhiderjayed" target="_blank"  rel="noreferrer" className=" social"><FaGithubAlt /></a>
+            <a href="https://www.linkedin.com/in/ashraful-hider-b53b5b193/" target="_blank"  rel="noreferrer" className=" social"><FaLinkedin /></a>
         </div>
         </>
 

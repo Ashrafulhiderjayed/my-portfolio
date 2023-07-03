@@ -37,7 +37,7 @@ const Projects = () => {
         <>
         <HeadingTitle text="RECENT PROJECTS"/>
         
-        <div className="grid md:grid-cols-3 gap-8 text-slate-300">
+        <div className="grid md:grid-cols-3 gap-8 text-slate-300" id="skills">
             {
                 projects.map((project, index) => <div key={index} className="shadow-lg ">
 

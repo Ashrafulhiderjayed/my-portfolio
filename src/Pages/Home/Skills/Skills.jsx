@@ -57,7 +57,7 @@ const Skills = () => {
       ];
     return (
         <>
-        <HeadingTitle text="SKILLS" />
+        <HeadingTitle text="SKILLS" id="skills" />
         <div className="grid md:grid-cols-4 items-center gap-5 justify-center">
           {skills.map((skill, index) => (
             <div

@@ -15,7 +15,7 @@ const About = () => {
         easing:         "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
     }
     return (
-        <div className="my-16">
+        <div className="my-16" id="about">
             <HeadingTitle text="ABOUT ME"/>
             <section className="flex justify-between align-middle flex-col md:flex-row">
             <div className="flex md:w-1/2 sm:text-center">

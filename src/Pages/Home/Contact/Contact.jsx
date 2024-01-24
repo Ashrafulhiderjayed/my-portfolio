@@ -1,9 +1,9 @@
 import { useRef } from "react";
 import HeadingTitle from "../../HeadingTitle/HeadingTitle";
-// import './Contact.css';
+import './Contact.css';
 import emailjs from '@emailjs/browser';
 import Swal from "sweetalert2";
-import { FaBeer, FaFacebook, FaGithub, FaGithubAlt, FaLinkedin } from 'react-icons/fa';
+import { FaFacebook, FaGithubAlt, FaLinkedin } from 'react-icons/fa';
 
 const Contact = () => {
     const form = useRef();
@@ -27,18 +27,19 @@ const Contact = () => {
     return (
         <>
         <HeadingTitle text="CONTACT ME" />
-        <div className="mb-11 login-box text-center">
-        <form ref={form} onSubmit={sendEmail}>
-                <label>Name</label>
-                <input type="text" name="user_name" /><br />
-                <br />
-                <label>Email</label>
-                <input type="email" name="user_email" /><br />
-                <br />
-                <label className="mr-32">Message</label>
-                <br />
+        <div className="contact">
             
-            <textarea name="message" /><br />
+        <form ref={form} onSubmit={sendEmail}>
+                <div className="flex justify-evently flex-wrap input-section">
+                    <input type="text" name="first_name" placeholder="First Name" />
+                    <input type="text" name="last_name" placeholder="Last Name" />
+                </div>
+                <div className="flex justify-evently flex-wrap input-section">
+                    <input type="email" name="user_email" placeholder="Enter Email" required/>
+                    <input type="number" placeholder="Enter Phone" />
+                </div>
+            
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" required/>
             
             <input type="submit" value="Send" />
             

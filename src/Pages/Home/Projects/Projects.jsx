@@ -1,4 +1,5 @@
 import HeadingTitle from "../../HeadingTitle/HeadingTitle";
+import hrm from "../../../assets/hrm.png"
 import photography from '../../../assets/summer-camp.png';
 import toy from '../../../assets/toy.png';
 import chef from '../../../assets/kitchen.png';
@@ -8,6 +9,14 @@ import { FaGithub, FaLink } from "react-icons/fa";
 
 const Projects = () => {
     const projects = [
+        {
+            image: hrm,
+            name: 'hrm',
+            client: '',
+            server: '',
+            live: 'https://hrm.islamicdigitallane.com/login',
+            feature: 'HRM system for Hi-Teach Bangla employees including maintaining projects to leave management',
+        },
         {
             image: photography,
             name: 'Photo Camp',

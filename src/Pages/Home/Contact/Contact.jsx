@@ -89,7 +89,32 @@ const Contact = () => {
                     </div>
                 </form>
             </div>
-            
+            <div className="text-cyan-50 mb-28 flex flex-wrap md:flex-nowrap pt-5 gap-6 justify-center items-center">
+                <a
+                    href="https://www.facebook.com/ashraful.hider/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="social group flex items-center justify-center w-12 h-12 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition duration-300"
+                >
+                    <FaFacebook className="text-2xl group-hover:scale-110 transition-transform duration-300" />
+                </a>
+                <a
+                    href="https://github.com/Ashrafulhiderjayed"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="social group flex items-center justify-center w-12 h-12 rounded-full bg-gray-800 text-white hover:bg-gray-900 transition duration-300"
+                >
+                    <FaGithubAlt className="text-2xl group-hover:scale-110 transition-transform duration-300" />
+                </a>
+                <a
+                    href="https://www.linkedin.com/in/ashraful-hider-b53b5b193/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="social group flex items-center justify-center w-12 h-12 rounded-full bg-blue-500 text-white hover:bg-blue-600 transition duration-300"
+                >
+                    <FaLinkedin className="text-2xl group-hover:scale-110 transition-transform duration-300" />
+                </a>
+            </div>
 
         </>
     );

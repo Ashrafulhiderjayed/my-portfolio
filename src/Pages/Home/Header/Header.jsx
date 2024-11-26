@@ -25,7 +25,7 @@ const Header = () => {
 
   return (
     <section
-      className="header min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 flex flex-col md:flex-row items-center justify-center px-6 md:px-20 gap-10 overflow-hidden"
+      className="header min-h-[90vh] bg-gradient-to-b from-gray-900 to-gray-800 flex flex-col md:flex-row items-center justify-center px-6 md:px-20 gap-10 overflow-hidden"
     >
       {/* Text Section */}
       <div className="text-content flex-1 text-center md:text-left space-y-6">

@@ -21,7 +21,7 @@ const Skills = () => {
         },
         {
             color: "#44a8b3",
-            value: 70,
+            value: 90,
             image: "https://www.svgrepo.com/show/374118/tailwind.svg",
         },
         {
@@ -46,12 +46,12 @@ const Skills = () => {
         },
         {
           color: "#13aa52",
-          value: 50,
+          value: 60,
           image: "https://www.svgrepo.com/show/331488/mongodb.svg",
         },
         {
             color: "#ffffff",
-            value: 50,
+            value: 90,
             image: "https://www.svgrepo.com/show/354113/nextjs-icon.svg",
           },
       ];

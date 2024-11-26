@@ -1,46 +1,54 @@
 import { Tilt } from 'react-tilt';
-import img from '../../../assets/1.png'
+import img from '../../../assets/1.png';
 import HeadingTitle from '../../HeadingTitle/HeadingTitle';
 
 const About = () => {
     const defaultOptions = {
-        reverse:        false,  // reverse the tilt direction
-        max:            35,     // max tilt rotation (degrees)
-        perspective:    1000,   // Transform perspective, the lower the more extreme the tilt gets.
-        scale:          1.1,    // 2 = 200%, 1.5 = 150%, etc..
-        speed:          1000,   // Speed of the enter/exit transition
-        transition:     true,   // Set a transition on enter/exit.
-        axis:           null,   // What axis should be disabled. Can be X or Y.
-        reset:          true,    // If the tilt effect has to be reset on exit.
-        easing:         "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
-    }
+        reverse: false,
+        max: 35,
+        perspective: 1000,
+        scale: 1.1,
+        speed: 1000,
+        transition: true,
+        axis: null,
+        reset: true,
+        easing: "cubic-bezier(.03,.98,.52,.99)",
+    };
+
     return (
         <div className="my-16" id="about">
-            <HeadingTitle text="ABOUT ME"/>
-            <section className="flex justify-between align-middle flex-col md:flex-row">
-            <div className="flex md:w-1/2 sm:text-center">
-            <Tilt options={defaultOptions} style={{ }}>
-          <img className='w-3/4 object-cover' src={img} alt="" />
-          </Tilt>
-        </div>
-        <div className="flex md:w-1/2 items-center text-justify">
-                {/* <div className='flex-1'>
-                    <img className='w-3/4' src={img} alt="" />
+            <HeadingTitle text="ABOUT ME" />
+            <section className="flex flex-col md:flex-row items-center justify-between gap-12">
+                {/* Image Section */}
+                <div className="md:w-1/2 flex justify-center">
+                    <Tilt options={defaultOptions}>
+                        <img
+                            className="w-3/4 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+                            src={img}
+                            alt="Developer Illustration"
+                        />
+                    </Tilt>
                 </div>
-                <div className='flex-1  items-center text-justify'> */}
-                <div className='text-slate-300 px-4 md:px-0'>
-                <h1 className='text-xl'>Hi there! <br /></h1>
-                    <p>I'm frontend-focused full stack web developer with expertise in MERN stack technology. With a passion for creating intuitive and engaging user experiences, I thrive in turning complex ideas into beautiful and functional websites.
-                    <br />
-                    <br />
-                    As a frontend specialist, I possess a deep understanding of HTML, CSS, and JavaScript, and I'm well-versed in modern frameworks like React.js. I used firebase to authenticate websites I build. I love crafting responsive and mobile-friendly interfaces that provide seamless navigation and deliver exceptional user interactions.
-                    <br />
-                    <br />
-                    In addition to my frontend skills, I have a solid foundation in backend development using Node.js and Express.js. I am experienced in building RESTful APIs and integrating them with MongoDB for efficient data management. Working with MERN stack allows me to seamlessly handle both client-side and server-side development, ensuring a smooth end-to-end user experience.
-                    <br />
-                    <br />
-                    I am ready build amazing websites for you.</p>
-                </div>
+
+                {/* Text Section */}
+                <div className="md:w-1/2 text-justify">
+                    <div className="text-gray-300 px-6 md:px-0">
+                        <h1 className="text-3xl font-semibold text-red-600 mb-4">
+                            Hi there! 👋
+                        </h1>
+                        <p className="mb-6 leading-relaxed">
+                            I am a <span className="font-semibold text-red-500">frontend-focused full-stack developer</span> with expertise in the MERN stack. My technical skill set includes <span className="font-semibold">HTML</span>, <span className="font-semibold">CSS</span>, <span className="font-semibold">JavaScript</span>, and advanced frameworks like <span className="font-semibold text-red-500">React.js</span>. 
+                        </p>
+                        <p className="mb-6 leading-relaxed">
+                            I am comfortable working with tools like <span className="font-semibold">Firebase</span> for authentication, <span className="font-semibold">MongoDB</span> for database management, and <span className="font-semibold">Express.js</span> for backend development. I’ve also implemented JWT authentication, dynamic data filtering, and private routes to ensure seamless user interactions.
+                        </p>
+                        <p className="mb-6 leading-relaxed">
+                            I use modern technologies such as <span className="font-semibold">Tailwind CSS</span> and <span className="font-semibold">DaisyUI</span> to create responsive, user-friendly interfaces, combined with tools like <span className="font-semibold">Stripe</span> for payment integration and <span className="font-semibold">Axios</span> for API requests.
+                        </p>
+                        <p className="leading-relaxed">
+                            My strong command of <span className="font-semibold">C++</span>, <span className="font-semibold">TypeScript</span>, and <span className="font-semibold">JavaScript</span> further enables me to solve complex problems and deliver robust, scalable applications. Ready to collaborate? Let’s build something exceptional together!
+                        </p>
+                    </div>
                 </div>
             </section>
         </div>

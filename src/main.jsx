@@ -1,10 +1,7 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import './index.css'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from './Pages/Home/Home/Home.jsx';
 
 const router = createBrowserRouter([
@@ -16,8 +13,13 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <div className='mx-auto max-w-7xl' style={{overflowX: 'hidden'}}>
-      <RouterProvider router={router} />
+    <div
+      className="bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white"
+      style={{ overflowX: 'hidden', minHeight: '100vh' }}
+    >
+      <div className='mx-auto max-w-screen-2xl'>
+        <RouterProvider router={router} />
+      </div>
     </div>
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);
